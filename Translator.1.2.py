@@ -28,7 +28,7 @@ if "-NoCheckUpdate" not in cmdLine.finally_cmdl:
                     response = requests.get(json_data["update"]["installer"], timeout=10)
         
                     if response.status_code  == 200:
-                        filename=str(random.ranint(0,65535))
+                        filename=str(random.randint(0,65535))
                         with open(f"temp\{filename}","wb") as f:
                             f.write(response.content)
                         os.system(f"start {filename}")
