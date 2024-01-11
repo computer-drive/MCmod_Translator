@@ -15,4 +15,4 @@
 Windows：EXE文件或PY源代码
 MacOS：PY源代码
 Linux：PY源代码
-提示：PY源代码使用时需要安装colorama和json模块
+提示：使用py文件运行时，需要安装requests、json模块，同时还要从Github仓库中下载base模块。
