@@ -13,7 +13,11 @@
 
 ## 下载
 Windows：EXE文件或PY源代码
+
 MacOS：PY源代码
+
 Linux：PY源代码
+
 提示：使用py文件运行时，需要安装requests、json模块，同时还要从Github仓库中下载base模块。
-1
+下载链接: [https://computer-drive.github.io/MCmod_Translator/exe_file/Translator.1.2.exe](https://computer-drive.github.io/MCmod_Translator/exe_file/Translator.1.2.exe)
+
