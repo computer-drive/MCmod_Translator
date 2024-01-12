@@ -9,7 +9,7 @@ import random
 import base
 import base.cmdLine as cmdLine
 ##检查更新
-version=1.0
+version=1.2
 
 if "-NoCheckUpdate" not in cmdLine.finally_cmdl:
     print(f"检查更新....(当前版本：{version})")
@@ -29,9 +29,10 @@ if "-NoCheckUpdate" not in cmdLine.finally_cmdl:
         
                     if response.status_code  == 200:
                         filename=str(random.randint(0,65535))
-                        with open(f"temp\{filename}","wb") as f:
+                        os.system("md temp")
+                        with open(f"{os.getcwd()}\\temp\\{filename}.exe","wb") as f:
                             f.write(response.content)
-                        os.system(f"start {filename}")
+                        os.system(f"start {os.getcwd()}\\temp\\{filename}.exe -MainFile={__file__}")
                         sys.exit(0)
                     else:
                         print(f"获取失败，http状态码： {response.status_code}")
